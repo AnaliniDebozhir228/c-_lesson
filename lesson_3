@@ -1,0 +1,13 @@
+#include <iostream>
+#include <locale>
+using namespace std;
+int main()
+{
+	system("chcp 65001 > nul");
+	locale::global(locale(""));
+	wcout.imbue(locale());
+	float a, b, c;
+	cout << "Ведите три числа (по одной на строку): " "\n" ;
+	cin >> a >> b >> c;
+	cout << a + b + c / 3;
+}
