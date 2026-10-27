@@ -1,0 +1,17 @@
+#include <iostream>
+#include <locale>
+using namespace std;
+int main()
+{
+	system("chcp 65001 > nul");
+	locale::global(locale(""));
+	wcout.imbue(locale());
+	string name = "Введите Имя: \n";
+	string last_name = "Введите Фамилию: \n";
+	cout << name;
+	cin >> name;
+	cout << last_name;
+	cin >> last_name;
+	cout << "Вас зовут:" + name + " " + last_name;
+
+}
