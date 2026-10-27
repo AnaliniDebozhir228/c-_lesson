@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    string str1, str2;
+    cin >> str1 >> str2;
+
+    if (str1.length() == str2.length()) {
+        cout << "oni ravni" << endl;
+    }
+    else if (str1.length() > str2.length()) {
+        cout << str1 << endl;
+    }
+    else {
+        cout << str2 << endl;
+    }
+}
