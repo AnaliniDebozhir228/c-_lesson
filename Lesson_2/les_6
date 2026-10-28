@@ -1,0 +1,52 @@
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+
+int main() 
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	cout << "ЗАДАЧА 1" "\n";
+	float a, b;
+	cout << "Катет a: " "\n";
+	cin >> a;
+	cout << "Катет b: " "\n";
+	cin >> b;
+	float c = sqrt(pow(a, 2)) + pow(b, 2);
+	cout << "Ответ: " << c;
+	cout << "\n";
+
+	cout << "ЗАДАЧА 2" "\n";
+	float q, w, e;
+	cout << "три числа (первы два - числа, последнее - степень. по одному числу в строчку: " "\n";
+	cin >> q;
+	cin >> w;
+	cin >> e;
+	cout << "Степень первого числа: " << pow(q, e);
+	cout << "Степень первого числа: " << pow(w, e);
+	cout << "\n";
+
+	cout << "ЗАДАЧА 3" "\n";
+	float x1, x2, y1, y2;
+	cout << "Ведите x1: " "\n";
+	cin >> x1;
+	cout << "Ведите x2: " "\n";
+	cin >> x2;
+	cout << "Ведите y1: " "\n";
+	cin >> y1;
+	cout << "Ведите y2: " "\n";
+	cin >> y2;
+	float x = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+	cout << "Растояние: " << x;
+	cout << "\n";
+
+	cout << "ЗАДАЧА 4" "\n";
+	float r1;
+	cout << "Ведите число: " "\n";
+	cin >> r1;
+	float p = 3.14;
+	float r = r1 * p / 180;
+	cout << "Косинус первого числа: " << cos(r) << "\n";
+	cout << "Синукс первого числа: " << sin(r) << "\n";
+
+}
