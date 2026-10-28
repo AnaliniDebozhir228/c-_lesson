@@ -1,0 +1,37 @@
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+
+int main() {
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	cout << "ЗАДАЧА 1" "\n";
+
+	float n, g = 9.8;
+	cout << "Введите массу в кг: ";
+	cin >> n;
+	float f = n * g;
+	cout << "Ответ: " << f;
+	cout << "\n";
+
+	cout << "ЗАДАЧА 2" "\n";
+
+	float s, t;
+	cout << "Ввелите растояние в км: " "\n";
+	cin >> s;
+	cout << "Время в часах" "\n";
+	cin >> t;
+	float v = s / t;
+	cout << "Ответ: " << v;
+	cout << "\n";
+
+	cout << "ЗАДАЧА 3" "\n";
+
+	float a, b;
+	cout << "Введи длину в см: " "\n";
+	cin >> a;
+	cout << "Введи ширину в см: " "\n";
+	cin >> b;
+	cout << "Периметр: " << a * 2 + b * 2 << "\n";
+	cout << "Площадь: " << a* b;
+}
