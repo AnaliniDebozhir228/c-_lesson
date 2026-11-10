@@ -1,0 +1,56 @@
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+
+int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+    
+    int a;
+    cout << "Ведите номер месяца (1-12): ";
+    cin >> a;
+    switch (a)
+    {
+        case 1:
+            cout << "Январь - 31 день";
+        break;
+        case 2:
+            cout << "Февраль - 28 дней (29 в вискосный год)";
+        break;
+        case 3:
+            cout << "Март - 31 день";
+        break;
+        case 4:
+            cout << "Апрель - 30 дней";
+        break;
+        case 5:
+            cout << "Май - 31 день";
+        break;
+        case 6:
+            cout << "Июнь - 30 дней";
+        break;
+        case 7:
+            cout << "Июль - 31 день";
+        break;
+        case 8:
+            cout << "Август - 31 день";
+        break;
+        case 9:
+            cout << "Сентябрь - 30 день";
+        break;
+        case 10:
+            cout << "Октябрь - 31 день"; 
+        break;
+        case 11:
+            cout << "Ноябрь - 30 дней";
+        break;
+        case 12:
+            cout << "Декабрь - 31 день"; 
+        break;
+        
+        default:
+            cout << "Ведите коректный номер месяца";
+        break;
+    }
+}
