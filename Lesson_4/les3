@@ -1,0 +1,39 @@
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+
+int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
+    int a, b;
+    char c;
+    cout<<"Ведите первое число: " "\n";
+    cin >> a;
+    cout<<"Ведите функцию (*/+-%):" "\n";
+    cin >> c;
+    cout<<"Ведите второе число: " "\n";
+    cin >> b;
+    switch (c)
+    {
+    case '+':
+        cout << a + b;
+        break;
+    case '-':
+        cout << a - b;
+        break; 
+    case '/':
+        cout << a / b;
+        break;
+    case '*':
+        cout << a * b;
+        break;
+    case '%':
+        if (a == 0 || b == 0)
+            cout << "Делить на ноль нельзя";
+        else
+        cout << a % b;
+        break;
+    }
+}
