@@ -1,0 +1,67 @@
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+
+int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+    cout << "---------ЗАДАНИЕ 1----------" "\n";
+    int a;
+    cout << "Ведите число a: ";
+    cin >> a;
+    cout << "Число " << (a % 2 == 0 ? "Чётное" : "Нечётное");
+    cout << "\n";
+    
+    cout << "---------ЗАДАНИЕ 2----------" "\n";
+    int b, c;
+    cout << "Ведите число b c: ";
+    cin >> b >> c;
+    cout << "Наименьшие число" << (b > c ? c : b);
+    cout << "\n";
+    
+    cout << "---------ЗАДАНИЕ 3----------" "\n";
+    int q, w;
+    cout << "Ведите число (Отрицательно ил положительное): ";
+    cin >> q;
+    w = (q > 0) ? q : abs(q);
+    cout << w;
+    cout << "\n";
+    
+    cout << "---------ЗАДАНИЕ 4----------" "\n";
+    int g;
+    cout << "Ведите ваш бал: ";
+    cin >> g;
+    cout <<(g > 100 || g < 0 ? "Ошибка":
+        g < 50 ? "2":
+        g < 69 ? "3":
+        g < 89 ? "4" : "5");
+    cout << "\n";
+    
+    cout << "---------ЗАДАНИЕ 5----------" "\n";
+    int o, p;
+    char l;
+    cout<<"Ведите первое число: " "\n";
+    cin >> o;
+    cout<<"Ведите функцию (*/+-):" "\n";
+    cin >> l;
+    cout<<"Ведите второе число: " "\n";
+    cin >> p;
+    switch (l)
+    {
+    case '+':
+        cout << o + p;
+        break;
+    case '-':
+        cout << o - p;
+        break; 
+    case '/':
+        cout << (p != 0 ? o / p : 0);
+        if (p == 0)
+            cout << "Делить на ноль нельзя";
+        break;
+    case '*':
+        cout << o * p;
+        break;
+    }
+}
