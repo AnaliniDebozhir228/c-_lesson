@@ -1,4 +1,3 @@
-//ЛЕХА Я СДЕЛАЛ ЭТОТ ФАЙЛ ДЛЯ СЕБЯ, ПРОСТО В ПАДЛУ ЗАХОДИТЬ НА СВОЙ ГИТ.
 #include <iostream>
 #include <Windows.h>
 using namespace std;
@@ -7,8 +6,9 @@ int main()
 {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
-    int y, n, balance, v, vv, tow1, tow2, tow3, tow4, tow5, n1;
-    tow1 = 100; tow2 = 2000; tow3 = 3000; tow4 = 4000; tow5 = 5000;
+    int y, n, balance, v, vv, n1;
+    float tow1, tow2, tow3, tow4, tow5;
+    tow1 = 1000; tow2 = 2000; tow3 = 3000; tow4 = 4000; tow5 = 5000;
     //ЗАДАНИЕ 1
     // cout<<"Enter a год: ";
     // cin>>y;
@@ -53,11 +53,15 @@ int main()
                 if (balance >= tow1)
                 {
                     cout << "вы купили товар1";
-                    balance = balance - tow1;
+                    balance = balance - ((tow1 < 1000) ?tow1 * 0.95 : tow1 < 5000 ?tow1* 0.9:1* 0.75);
+
+                    cout << "Ваш баланс составляет: " << balance << endl;
+                    
                 }
                 else
                 {
                     cout << "вы не можете купить купили товар1";
+            cout << "Ваш баланс составляет: " << balance << endl;
                     
                 }
                 break;
@@ -66,11 +70,15 @@ int main()
                 if (balance >= tow2)
                 {
                     cout << "вы купили товар2";
-                    balance = balance - tow2;
+                    balance = balance - ((tow2 < 1000) ?tow2 * 0.95 : tow2 < 5000 ?tow2* 0.9:tow2* 0.75);
+
+            cout << "Ваш баланс составляет: " << balance << endl;
+                    
                 }
                 else
                 {
                     cout << "вы не можете купить купили товар2";
+            cout << "Ваш баланс составляет: " << balance << endl;
                     
                 }
                 break;
@@ -79,11 +87,15 @@ int main()
                 if (balance >= tow3)
                 {
                     cout << "вы купили товар3";
-                    balance = balance - tow3;
+                    balance = balance - ((tow3 < 1000) ?tow3 * 0.95 : tow3 < 5000 ?tow3* 0.9:tow3* 0.75);
+            cout << "Ваш баланс составляет: " << balance << endl;
+                    
                 }
                 else
                 {
                     cout << "вы не можете купить купили товар3";
+            cout << "Ваш баланс составляет: " << balance << endl;
+                    
                     
                 }
                 break;
@@ -92,11 +104,16 @@ int main()
                 if (balance >= tow4)
                 {
                     cout << "вы купили товар4";
-                    balance = balance - tow4;
+                    balance = balance - ((tow4 < 1000) ?tow4 * 0.95 : tow4 < 5000 ?tow4* 0.9:tow4* 0.75);
+
+            cout << "Ваш баланс составляет: " << balance << endl;
+                    
                 }
                 else
                 {
                     cout << "вы не можете купить купили товар4";
+            cout << "Ваш баланс составляет: " << balance << endl;
+                    
                     
                 }
                 break;
@@ -105,17 +122,21 @@ int main()
                 if (balance >= tow5)
                 {
                     cout << "вы купили товар5";
-                    balance = balance - tow5;
+                    balance = balance - ((tow5 < 1000) ?tow5 * 0.95 : tow5 < 5000 ?tow5* 0.9:tow5* 0.75);
+
+            cout << "Ваш баланс составляет: " << balance << endl;
+                    
                 }
                 else
                 {
                     cout << "вы не можете купить купили товар5";
+            cout << "Ваш баланс составляет: " << balance << endl;
+                    
                     
                 }
                 break;
-                
-                
             }
+          
         default:
             bo = FALSE;
             
