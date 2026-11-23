@@ -1,0 +1,35 @@
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+
+int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
+    cout << "---------ЗАДАНИЕ 1----------" "\n";
+    int a, b;
+    cout << "Ведите первое число: ";
+    cin >> a;
+    cout << "Ведите второе число: ";
+    cin >> b;
+
+    if (a > b)
+        cout << "Большее число: " << a;
+    else if (b > a)
+        cout << "Большее число: " << b;
+    else
+        cout << "Числа равны";
+    cout << "\n";
+
+    cout << "---------ЗАДАНИЕ 2----------" "\n";
+    int c;
+    cout << "Ведите число: ";
+    cin >> c;
+
+    if (c > 0 && c < 100)
+        cout << c;
+    cout << "\n";
+
+    return 0;
+}
