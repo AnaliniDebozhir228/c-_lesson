@@ -1,0 +1,75 @@
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+
+int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
+    cout << "---------ЗАДАНИЕ 1----------" "\n";
+    int a;
+    cout << "Ведите номер дня недели (1-7): ";
+    cin >> a;
+
+    switch (a)
+    {
+    case 1:
+        cout << "Понедельник";
+        break;
+    case 2:
+        cout << "Вторник";
+        break;
+    case 3:
+        cout << "Среда";
+        break;
+    case 4:
+        cout << "Четверг";
+        break;
+    case 5:
+        cout << "Пятница";
+        break;
+    case 6:
+        cout << "Суббота";
+        break;
+    case 7:
+        cout << "Воскресенье";
+        break;
+    default:
+        cout << "Ведите корректный номер дня";
+        break;
+    }
+    cout << "\n";
+
+    cout << "---------ЗАДАНИЕ 2----------" "\n";
+    int b;
+    cout << "---------МЕНЮ РЕСТОРАНА----------" "\n";
+    cout << "1. Пицца - 500 руб." "\n";
+    cout << "2. Бургер - 300 руб." "\n";
+    cout << "3. Салат - 250 руб." "\n";
+    cout << "4. Чай - 100 руб." "\n";
+    cout << "Выберите блюдо (1-4): ";
+    cin >> b;
+
+    switch (b)
+    {
+    case 1:
+        cout << "Вы выбрали пиццу. Цена: 500 руб.";
+        break;
+    case 2:
+        cout << "Вы выбрали бургер. Цена: 300 руб.";
+        break;
+    case 3:
+        cout << "Вы выбрали салат. Цена: 250 руб.";
+        break;
+    case 4:
+        cout << "Вы выбрали чай. Цена: 100 руб.";
+        break;
+    default:
+        cout << "Такого блюда нет в меню";
+        break;
+    }
+    cout << "\n";
+
+    return 0;
+}
