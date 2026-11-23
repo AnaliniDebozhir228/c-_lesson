@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+#include <Windows.h>
+using namespace std;
+
+int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
+    cout << "---------ЗАДАНИЕ 1----------" "\n";
+    int i = 0;
+
+    while (true)
+    {
+        cout << i << " ";
+        i++;
+
+        if (i > 10)
+            i = 0;
+    }
+
+    cout << "\n";
+
+    cout << "---------ЗАДАНИЕ 2----------" "\n";
+    string text;
+    cout << "Введите строку: ";
+    cin >> text;
+
+    for (int j = 0; j < text.length(); j++)
+    {
+        cout << text[j] << "л" << text[j];
+    }
+
+    cout << "\n";
+
+    return 0;
+}
