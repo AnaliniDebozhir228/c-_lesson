@@ -8,31 +8,42 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
-    cout << "---------ЗАДАНИЕ 1----------" "\n";
-    int i = 0;
+    int choice;
+    cout << "Выберите задание (1 или 2): ";
+    cin >> choice;
 
-    while (true)
+    if (choice == 1)
     {
-        cout << i << " ";
-        i++;
+        cout << "---------ЗАДАНИЕ 1----------" "\n";
+        int i = 0;
 
-        if (i > 10)
-            i = 0;
+        while (true)
+        {
+            cout << i << " ";
+            i++;
+
+            if (i > 10)
+                i = 0;
+        }
     }
-
-    cout << "\n";
-
-    cout << "---------ЗАДАНИЕ 2----------" "\n";
-    string text;
-    cout << "Введите строку: ";
-    cin >> text;
-
-    for (int j = 0; j < text.length(); j++)
+    else if (choice == 2)
     {
-        cout << text[j] << "л" << text[j];
-    }
+        cout << "---------ЗАДАНИЕ 2----------" "\n";
+        string text;
+        cout << "Введите строку: ";
+        cin >> text;
 
-    cout << "\n";
+        for (int j = 0; j < text.length(); j++)
+        {
+            cout << text[j] << "л" << text[j];
+        }
+
+        cout << "\n";
+    }
+    else
+    {
+        cout << "Некорректный выбор";
+    }
 
     return 0;
 }
