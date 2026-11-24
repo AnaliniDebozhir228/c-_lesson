@@ -8,17 +8,59 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
-    int count = 0;
-    for (int i = 2; i < 1000; i++)
+    // Задание 2. Перевернуть четырехзначное число
     {
-        count = 0;
-        for (int j = 2; j < i; j++)
+        int n;
+        cout << "Задание 2\n";
+        cout << "Введите четырехзначное число: ";
+        cin >> n;
+
+        int a = n % 10;
+        int b = n / 10 % 10;
+        int c = n / 100 % 10;
+        int d = n / 1000;
+
+        int result = a * 1000 + b * 100 + c * 10 + d;
+
+        cout << "Перевернутое число: " << result << endl;
+    }
+
+    // Задание 3. Произведение цифр четырехзначного числа
+    {
+        int n;
+        cout << "\nЗадание 3\n";
+        cout << "Введите четырехзначное число: ";
+        cin >> n;
+
+        int a = n % 10;
+        int b = n / 10 % 10;
+        int c = n / 100 % 10;
+        int d = n / 1000;
+
+        int result = a * b * c * d;
+
+        cout << "Произведение цифр: " << result << endl;
+    }
+
+    // Задание 4. Трассировка цикла (задание 1 на фото)
+    {
+        int sum = 0;
+
+        cout << "\nЗадание 4\n";
+
+        for (int i = 1; i < 6; i++)
         {
-            if (i % j == 0)
+            for (int j = 1; j < i; j++)
             {
-                count++; break;
+                sum += i * j;
+                cout << "i = " << i
+                     << ", j = " << j
+                     << ", sum = " << sum << endl;
             }
         }
-        if (count == 0) cout << i;
+
+        cout << "Итоговая сумма: " << sum << endl;
     }
+
+    return 0;
 }
